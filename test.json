@@ -1,0 +1,20 @@
+on('ready',function(){
+    ShapedScripts.addEntities({
+        "name": "CustomHBSpells",
+        "dependencies": ["SRD"],
+        "version": "2.0.0",
+        "classes": [{"name": "Wizard", "spells": ["Debilitating Domination"]}],
+        "spells": [{
+            "name": "Debilitating Domination",
+            "level": 1,
+            "school": "Enchantment",
+            "castingTime": "1 action",
+            "range": "30 feet",
+            "components": {"verbal": true, "somatic": true},
+            "duration": "Concentration, 1 minute",
+            "description": "You attempt to bewitch a creature that you can see within range. It must succeed on a Wisdom saving throw or be charmed by you for the duration, but this rapidly taxes your mind, body, and soul to the breaking point, even to death if you are not careful. If you are immune to exhaustion, you are incapable of powering the spell correctly and the spell fails. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw. While the target is charmed, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as “Attack that creature,” “Run over there,” or “Fetch that object.” If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability. You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose. You can also cause the creature to use a reaction, but this requires you to use your own reaction as well. Each time the target takes damage, it makes a new Wisdom saving throw against the spell. If the saving throw succeeds, the spell ends. Maintaining the link quickly exhausts the caster’s mind, body, and soul. You take one level of exhaustion when the creature fails the first Wisdom saving throw (if it succeeds, you take no exhaustion and the spell ends); thereafter, at the end of each of that creature’s turns, you take another level of exhaustion (for example, you would have two levels of exhaustion after the creature’s next turn)",
+            "concentration": true
+        },
+		]
+    });
+});
